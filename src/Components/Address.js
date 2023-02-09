@@ -28,6 +28,8 @@
 //     }
 // }
 
+//transformation de la class en fonction:
+
 export default function Adress(props) {
         const {rue, ville, cp} = props.addresse
         return(
