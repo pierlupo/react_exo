@@ -9,27 +9,28 @@ class Contact extends Component {
 
         this.state = {
             contact: { 
-                nom: "hghgjk",
-                prenom: "sdggdgs",
-                tel: "4534545347",
+                nom: "Michel",
+                prenom: "Louise",
+                tel: "inconnu",
 
              addresse: { 
-                rue: "sgsg",
-                ville: "fgdhhd",
-                cp: "15645"
+                rue: "rue",
+                ville: " Vroncourt-la-Côte",
+                cp: "52000"
             }
         }
     }
 }
 
     render(){
+        const {nom, prenom, tel} = this.state.contact
         return (
-            <>
-             name: {this.state.contact.nom},
-             firstname: {this.state.contact.prenom},
-             tel: {this.state.contact.tel}
-             <Address addresse = {this.state.contact.addresse}></Address>
-            </>
+            <div>
+                nom: {nom}, prenom: {prenom}, tel: {tel}
+                <Address addresse = {this.state.contact.addresse}></Address>
+             {/* name: {this.state.contact.nom},firstname: {this.state.contact.prenom},tel: {this.state.contact.tel}
+             <Address addresse = {this.state.contact.addresse}></Address> */}
+            </div>
         )
     }
 }
